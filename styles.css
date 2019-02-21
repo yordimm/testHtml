@@ -1,0 +1,27 @@
+.grid {
+    border-style: solid;
+    border-width: 1px;
+    height: 200px;
+    width: 25%;
+    background-color: #EEAE6C;
+  }
+  
+  .parentgrid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 720px) {
+    .grid {
+      width:50%;
+    }
+  }
+   @media (max-width: 360px) {
+    .parentgrid {
+      flex-direction:column
+    }
+    .grid {
+      width:100%;
+    }
+  } 
